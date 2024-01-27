@@ -1,7 +1,9 @@
 import json
 
+# site organization news newspaper magazine
+
 def remove_items_with_link_for_arts(json_data):
-    return [item for item in json_data if item.get('occupations', '') != '1' and "Newspaper" not in item.get('occupations', '')]
+    return [item for item in json_data if item.get('occupations', '') != '1' and "magazine" not in item.get('occupations', '')]
 
 json_file_path = 'workers_/data.json'
 
